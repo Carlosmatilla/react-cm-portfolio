@@ -26,7 +26,7 @@ const Projects = () => {
   return <>
 
     <AnimatedSection variants={right} transition={tweenTransition} width={100} height={50}>
-      <img src={project.img} alt="" className="img" />
+      <img src={project.img} alt="" className="project__img" />
     </AnimatedSection>
 
 

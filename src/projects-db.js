@@ -6,7 +6,7 @@ import beer from './assets/beer.png'
 export const projects = [
     {
       img: drone,
-      name: 'Js-Drone',
+      name: 'JS-Drone',
       id: 1
     },
     {

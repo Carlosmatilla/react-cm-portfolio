@@ -1,8 +1,7 @@
 import React from 'react'
-import './Image.sass'
 
 
-const Image = ({source}) => <img className="image" src={source} alt="" />
+const Image = ({source}) => <img className="home__image" src={source} alt="" />
     
 
 export default Image

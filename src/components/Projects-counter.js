@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 const ProjectsCounter = ({ project, progressBar }) => <>
 
-    <motion.div className="proyects" initial={{y: `20vh`, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{delay: 0.3, type: `tween`, duration: 0.6}}>
+    <motion.div className="projects" initial={{y: `20vh`, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{delay: 0.3, type: `tween`, duration: 0.6}}>
         <h2>{project.name}</h2>
     </motion.div>
 

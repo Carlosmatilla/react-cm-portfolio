@@ -1,6 +1,4 @@
 import Navbar from './Navbar'
-import Description from './Description'
-import Sidebar from './Sidebar'
 import AnimatedSection from './AnimatedSection'
 import FrontStack from './Front-stack'
 import BackStack from './Back-stack'
@@ -9,11 +7,11 @@ import Stack from './Stack'
 import Image from './Image'
 import ProjectsCounter from './Projects-counter'
 import ProjectsNav from './Projects-nav'
+import HomeTitle from './Home-title'
+import HomeSubtitle from './Home-subtitle'
 
 export {
     Navbar,
-    Description,
-    Sidebar, 
     AnimatedSection,
     FrontStack,
     BackStack,
@@ -21,5 +19,7 @@ export {
     Stack,
     Image, 
     ProjectsCounter,
-    ProjectsNav
+    ProjectsNav,
+    HomeTitle,
+    HomeSubtitle
 }
