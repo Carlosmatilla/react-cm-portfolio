@@ -1,11 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './components/App/App'
+import App from './App'
+import { BrowserRouter as Router } from "react-router-dom";
+import './reset.sass'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Router>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-)
-
+  </Router>,
+  document.getElementById("root")
+);

@@ -1,12 +1,25 @@
-import Navbar from './Navbar/Navbar'
-import Description from './Description/Description'
-import Image from './Image/Image'
-import Sidebar from './Sidebar/Sidebar'
-import './reset.sass'
+import Navbar from './Navbar'
+import Description from './Description'
+import Sidebar from './Sidebar'
+import AnimatedSection from './AnimatedSection'
+import FrontStack from './Front-stack'
+import BackStack from './Back-stack'
+import TestStack from './Test-stack'
+import Stack from './Stack'
+import Image from './Image'
+import ProjectsCounter from './Projects-counter'
+import ProjectsNav from './Projects-nav'
 
 export {
     Navbar,
     Description,
-    Image,
-    Sidebar
+    Sidebar, 
+    AnimatedSection,
+    FrontStack,
+    BackStack,
+    TestStack, 
+    Stack,
+    Image, 
+    ProjectsCounter,
+    ProjectsNav
 }

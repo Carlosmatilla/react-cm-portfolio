@@ -1,0 +1,62 @@
+.navbar
+    width: 13%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-end
+    z-index: 5
+    background-color: #fff
+    
+    &__logo
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #373737
+        background-color: #FFEB00
+        // background: linear-gradient(180deg, #91f, #70f);
+        width: 100%
+        height: 50%
+        & > h1 
+            font-family: 'Montserrat', sans-serif
+            text-transform: uppercase
+            font-size: 32px
+            line-height: 2
+            text-align: center
+            font-weight: 400
+    &__items
+        display: flex
+        flex-direction: column
+        justify-content: center
+        width: 100%
+        height: 20%
+        margin: 4rem 0
+        
+    &__item 
+        display: flex
+        justify-content: flex-end
+        width: 100%
+        padding: 0.75rem 0
+        color: #494949
+        font-size: 20px
+        font-weight: 100
+        letter-spacing: 0.15rem
+        text-transform: uppercase
+        cursor: pointer
+        &:hover
+            background: #494949
+            & > p
+                color: #fff
+
+    &__link
+        color: #494949
+        text-decoration: none 
+    &__social
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        width: 60%
+        height: 8%
+        & > svg
+            margin-left: 1rem
+
