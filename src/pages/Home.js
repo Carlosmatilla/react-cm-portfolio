@@ -15,7 +15,7 @@ const Home = () => {
 
     </AnimatedSection>
 
-    <AnimatedSection variants={up} transition={tweenTransition} width={50} height={100}>
+    <AnimatedSection variants={up} transition={tweenTransition} align={'flex-end'} width={50} height={100}>
 
       <Image source={profile} />
 

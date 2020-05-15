@@ -1,5 +1,5 @@
 import React from "react"
-import { AnimatedSection, ProjectsCounter, ProjectsNav } from '../components/index'
+import { AnimatedSection, ProjectsCounter, ProjectsNav, Stack } from '../components/index'
 import { left, right, tweenTransition } from '../animations'
 import { projects } from '../projects-db'
 import { useParams, useHistory } from "react-router-dom"
@@ -14,12 +14,12 @@ const Projects = () => {
 
   function handleNextProject() {
     if (project.id > projects.length - 1) return
-    history.push(`/projects/${Number(id)+1}`)
+    history.push(`/projects/${Number(id) + 1}`)
   }
 
   function handlePreviousProject() {
     if (project.id - 2 < 0) return
-    history.push(`/projects/${Number(id)-1}`)
+    history.push(`/projects/${Number(id) - 1}`)
   }
 
 
@@ -31,6 +31,25 @@ const Projects = () => {
 
 
     <AnimatedSection variants={left} transition={tweenTransition} width={100} height={50}>
+      <div className="description">
+        <div className="description__title">
+          <h1>Features</h1>
+        </div>
+
+        <div className="description__text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aperiam facere ex voluptates eligendi aut provident voluptatum,
+            rem numquam qui.
+			    </p>
+        </div>
+
+        <div className="description__btn">
+          DETAILS +
+            </div>
+      </div>
+
+      <Stack technologies={project.technologies} />
 
       <ProjectsCounter project={project} progressBar={progressBar} />
 
@@ -40,7 +59,7 @@ const Projects = () => {
     <ProjectsNav handleNextProject={handleNextProject} handlePreviousProject={handlePreviousProject} />
 
   </>
-  
+
 }
 
 export default Projects

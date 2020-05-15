@@ -1,21 +1,9 @@
 import React from 'react'
 import { Icon } from '@iconify/react'
-import nodejsIcon from '@iconify/icons-logos/nodejs'
-import javascriptIcon from '@iconify/icons-logos/javascript'
-import reactIcon from '@iconify/icons-logos/react'
-import electronIcon from '@iconify/icons-logos/electron'
-import reduxIcon from '@iconify/icons-logos/redux'
-import mongodbIcon from '@iconify/icons-logos/mongodb'
-import jestIcon from '@iconify/icons-logos/jest'
-import jasmineIcon from '@iconify/icons-logos/jasmine'
-import expressIcon from '@iconify/icons-logos/express'
-import sassIcon from '@iconify/icons-logos/sass'
-import html5 from '@iconify/icons-logos/html-5'
-import mochaIcon from '@iconify/icons-logos/mocha'
-import { motion } from 'framer-motion'
 
 
-const Stack = () => {
+
+const Stack = ({ technologies }) => {
 
     const variant = {
         // initial: {
@@ -29,7 +17,7 @@ const Stack = () => {
         //       staggerChildren: 0.15,
         //       delayChildren: 0.7
         //   }
-        
+
         // },
         // out: {
         //     opacity: 0,
@@ -44,7 +32,7 @@ const Stack = () => {
         // in: {
         //     opacity: 1,
         //     y: 0,
-        
+
         // },
         // out: {
         //     opacity: 0,
@@ -53,51 +41,56 @@ const Stack = () => {
     }
 
     return <>
-
-        <motion.div className="stack"
-     
-            variants={variant}
-        >
-
-            {/* <motion.div variants={variant2} >
-                <Icon icon={html5} width="60" />
-            </motion.div> */}
-            <motion.div variants={variant2}>
-                <Icon icon={sassIcon} width="60" />
-            </motion.div>
-            <motion.div variants={variant2}>
-                <Icon icon={javascriptIcon} width="60" />
-            </motion.div>
-            <motion.div variants={variant2}>
-                <Icon icon={nodejsIcon} width="60" />
-            </motion.div>
-            <motion.div variants={variant2}>
-                <Icon icon={reactIcon} width="60" />
-            </motion.div>
-            <motion.div variants={variant2}>
-                <Icon icon={reduxIcon} width="60" />
-            </motion.div>
-            {/* <motion.div variants={variant2}>
-                <Icon icon={electronIcon} width="60" />
-            </motion.div> */}
-            <motion.div variants={variant2}>
-                <Icon icon={expressIcon} width="60" />
-            </motion.div>
-            <motion.div variants={variant2}>
-                <Icon icon={mongodbIcon} width="60" />
-            </motion.div>
-            <motion.div variants={variant2}>
-                <Icon icon={jestIcon} width="60" />
-            </motion.div>
-            <motion.div variants={variant2}>
-                <Icon icon={jasmineIcon} width="60" />
-            </motion.div>
-            {/* <motion.div variants={variant2}>
-                <Icon icon={mochaIcon} width="60" />
-            </motion.div> */}
+        <div className="stack">
+            <div className="stack__title">
+                <h1>Technologies</h1>
+            </div>
 
 
 
+            <div className="stack__content"
+
+                variants={variant}
+            >
+
+                {technologies.map(t => <Icon icon={t} width="40" />)}
+                {/*     
+     <motion.div variants={variant2} >
+         <Icon icon={html5} width="60" />
+     </motion.div>
+     <motion.div variants={variant2}>
+         <Icon icon={sassIcon} width="60" />
+     </motion.div>
+     <motion.div variants={variant2}>
+         <Icon icon={javascriptIcon} width="60" />
+     </motion.div>
+     <motion.div variants={variant2}>
+         <Icon icon={nodejsIcon} width="60" />
+     </motion.div>
+     <motion.div variants={variant2}>
+         <Icon icon={reactIcon} width="60" />
+     </motion.div>
+     <motion.div variants={variant2}>
+         <Icon icon={reduxIcon} width="60" />
+     </motion.div>
+     <motion.div variants={variant2}>
+         <Icon icon={electronIcon} width="60" />
+     </motion.div>
+     <motion.div variants={variant2}>
+         <Icon icon={expressIcon} width="60" />
+     </motion.div>
+     <motion.div variants={variant2}>
+         <Icon icon={mongodbIcon} width="60" />
+     </motion.div>
+     <motion.div variants={variant2}>
+         <Icon icon={jestIcon} width="60" />
+     </motion.div>
+     <motion.div variants={variant2}>
+         <Icon icon={jasmineIcon} width="60" />
+     </motion.div>
+     <motion.div variants={variant2}>
+         <Icon icon={mochaIcon} width="60" />
+     </motion.div> */}
 
 
 
@@ -107,7 +100,16 @@ const Stack = () => {
 
 
 
-        </motion.div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
 
     </>
 }
