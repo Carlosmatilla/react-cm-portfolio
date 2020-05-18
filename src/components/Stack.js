@@ -1,5 +1,6 @@
 import React from 'react'
 import { Icon } from '@iconify/react'
+import { motion } from 'framer-motion'
 
 
 
@@ -41,19 +42,21 @@ const Stack = ({ technologies }) => {
     }
 
     return <>
-        <div className="stack">
+        <motion.div className="stack"
+        initial={{y: `20vh`, opacity: 0}} animate={{y: 0, opacity: 1}} 
+        transition={{delay: 1.2, type: `tween`, duration: 0.6}}>
             <div className="stack__title">
                 <h1>Technologies</h1>
             </div>
 
-
+            <span className="verti"></span>
 
             <div className="stack__content"
 
                 variants={variant}
             >
 
-                {technologies.map(t => <Icon icon={t} width="40" />)}
+                {technologies.map(t => <Icon icon={t} width="50" />)}
                 {/*     
      <motion.div variants={variant2} >
          <Icon icon={html5} width="60" />
@@ -107,7 +110,7 @@ const Stack = ({ technologies }) => {
 
 
 
-        </div>
+        </motion.div>
 
 
 

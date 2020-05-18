@@ -30,7 +30,8 @@ export const projects = [
         mongodbIcon,
         jestIcon,
         jasmineIcon
-      ]
+      ],
+      features: "Js-Drone is an ElectronJs APP that allows you to control a drone through a Nintendo Switch gamepad or keyboard, watch live video, check telemetry and save telemetry for each flight."
     },
     {
       img: videogames,
@@ -42,7 +43,8 @@ export const projects = [
         sassIcon, 
         javascriptIcon,
         jestIcon
-      ]
+      ],
+      features: "Games-Rating is a ReactJs web that allows you to rate videogames by yourself or randomly. State is managed with Redux and Backend service emulated with JSON-Server."
     },
     {
       img: beer,
@@ -53,6 +55,7 @@ export const projects = [
         reduxIcon, 
         sassIcon, 
         javascriptIcon
-      ]
+      ],
+      features: "Beer-APP is a web built with ReactJs that allows you to find beers by name, IBU and ABV through FUNK API calls. State is managed with Redux."
     }
   ]

@@ -3,6 +3,7 @@ import { AnimatedSection, ProjectsCounter, ProjectsNav, Stack } from '../compone
 import { left, right, tweenTransition } from '../animations'
 import { projects } from '../projects-db'
 import { useParams, useHistory } from "react-router-dom"
+import { motion } from 'framer-motion'
 
 
 const Projects = () => {
@@ -31,23 +32,26 @@ const Projects = () => {
 
 
     <AnimatedSection variants={left} transition={tweenTransition} width={100} height={50}>
-      <div className="description">
+      <motion.div className="description"
+      initial={{y: `20vh`, opacity: 0}} animate={{y: 0, opacity: 1}} 
+      transition={{delay: 0.9, type: `tween`, duration: 0.6}}>
         <div className="description__title">
           <h1>Features</h1>
         </div>
+        <span className="verti"></span>
 
         <div className="description__text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Aperiam facere ex voluptates eligendi aut provident voluptatum,
-            rem numquam qui.
+           {project.features}
 			    </p>
         </div>
 
         <div className="description__btn">
-          DETAILS +
+          REPOSITORY +
             </div>
-      </div>
+      </motion.div>
+
+      <span className='separator'></span>
 
       <Stack technologies={project.technologies} />
 

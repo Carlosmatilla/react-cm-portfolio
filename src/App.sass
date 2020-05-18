@@ -9,6 +9,7 @@
     height: 100%
     display: flex
     flex-wrap: wrap
+    
 
 .section
     flex-shrink: 0
@@ -28,8 +29,6 @@
     width: 100%
     height: 100%
     background-color: green
-
-
 
 .home__title
     width: 100%
@@ -90,11 +89,13 @@
     justify-content: center
     align-items: center
     width: 22%
-    height: 15%
+    height: 14%
     background-color: #FFEB00
-    color: #373737
+    // background: linear-gradient(180deg, #91f, #70f)
+    color: #696969
+    // color: #fff
     & > h2
-        font-size: 1.4rem
+        font-size: 1.5rem
         font-weight: 100
 
 .counter
@@ -105,12 +106,12 @@
     justify-content: space-evenly
     align-items: center
     width: 25%
-    height: 23%
+    height: 21%
     background-color: #373737
     color: #fff
     h2
         letter-spacing: 1px
-        font-size: 70px
+        font-size: 3.5rem
         color: #fff
 
     div
@@ -126,8 +127,8 @@
 
 .counter__nav
     position: absolute
-    width: 12%
-    height: 7.5%
+    width: 10%
+    height: 7%
     bottom: 0
     right: 0
     display: flex
@@ -140,7 +141,9 @@
     align-items: center
     justify-content: center
     background-color: #FFEB00
+    // background: linear-gradient(180deg, #91f, #70f)
     color: #373737
+    // color: #fff
     font-size: 1.2rem
     cursor: pointer
     &:hover
@@ -201,14 +204,15 @@
     align-items: flex-end
     z-index: 5
     background-color: #fff
+    // border-right: 1px solid #e6e6e6
 
     &__logo
         display: flex
         justify-content: center
         align-items: center
-        color: #373737
+        color: #696969
         background-color: #FFEB00
-        // background: linear-gradient(180deg, #91f, #70f);
+        // background: linear-gradient(180deg, #91f, #70f)
         width: 100%
         height: 50%
         & > h1
@@ -243,8 +247,9 @@
                 color: #fff
 
     &__link
-        color: #494949
+        color: #373737
         text-decoration: none
+        margin-right: 0.5rem
     &__social
         display: flex
         justify-content: flex-end
@@ -252,7 +257,8 @@
         width: 60%
         height: 8%
         & > svg
-            margin-left: 1rem
+            margin: 0 0.5rem 0 1rem
+            color: #373737
 
 .description
     height: 100%
@@ -260,15 +266,16 @@
     padding: 4rem 5rem
     display: flex
     flex-direction: column
-    justify-content: flex-end
-    
+    justify-content: flex-start
+    // border-right: 1px solid #e6e6e6
 
     &__title
-        height: 15%
+        // height: 15%
         // background-color: pink
         display: flex
         justify-content: flex-start
         align-items: center
+        padding: 1rem 0
         font-size: 1.25rem
         font-family: 'Montserrat', sans-serif
         & > h1
@@ -276,14 +283,14 @@
             color: #373737
 
     &__text
-        margin: 1.5rem 0
+        margin: 1rem 0
         // height: 40%
         // background-color: green
         // padding: 1rem
         display: flex
         justify-content: flex-start
         align-items: center
-        font-size: 0.8rem
+        font-size: 1rem
         & > p
             font-family: 'Montserrat', sans-serif
             line-height: 1.8rem
@@ -297,11 +304,8 @@
         // padding: 1rem
         display: flex
         align-items: center
-        font-size: 0.9rem
+        font-size: 1rem
         font-family: 'Montserrat', sans-serif
-
-
-
 
 .stack
     height: 100%
@@ -309,11 +313,12 @@
     padding: 4rem 5rem
     display: flex
     flex-direction: column
-    justify-content: flex-end
+    justify-content: flex-start
     align-items: flex-start
     &__title
-        height: 15%
+        // height: 15%
         // background-color: pink
+        padding: 1rem 0
         display: flex
         justify-content: flex-start
         align-items: center
@@ -339,8 +344,9 @@
         & > div
             color: #373737
             font-size: 3.5vw
-
-
+            &:hover
+                
+                
 
 // .stack
 
@@ -357,3 +363,19 @@
 
 //     & > div
 //         font-size: 3.5vw
+
+.separator
+    position: absolute
+    top: 40%
+    left: 50%
+    transform: translate(-50%, -40%)
+    height: 30%
+    width: 1px
+    background-color: #e6e6e6
+
+
+// .verti
+//     width: 30%
+//     height: 1px
+//     // margin-left: 2%
+//     background-color: #e6e6e6

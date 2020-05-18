@@ -8,7 +8,7 @@ const AnimatedSection = ({ children, variants, transition, width, height, align 
 
         <motion.section
             className="section"
-            style={{ width: `${width}%`, height: `${height}%`, alignItems: align }}
+            style={{ width: `${width}%`, height: `${height}%`, justifyContent: align }}
             initial="initial"
             animate="in"
             exit="out"
