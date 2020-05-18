@@ -12,7 +12,8 @@ const Navbar = () => {
 
         <nav className="navbar">
             <div className="navbar__logo">
-                <h1 className="">CM</h1>
+                <h1 className="">LOGO</h1>
+                <h3>Site Under Construction</h3>
             </div>
 
             <ul className="navbar__items">
@@ -21,15 +22,18 @@ const Navbar = () => {
 
                 <li className="navbar__item" onClick={() => history.push('/projects/1')}><p className="navbar__link">Projects.</p></li>
 
-                <li className="navbar__item" onClick={() => history.push('/about')}><p className="navbar__link">About Me.</p></li>
+                <li className="navbar__item"><p className="navbar__link">About Me.</p></li>
 
-                <li className="navbar__item" onClick={() => history.push('/contact')}><p className="navbar__link">Contact.</p></li>
+                <li className="navbar__item" ><p className="navbar__link">Contact.</p></li>
 
             </ul>
 
             <div className="navbar__social">
-                <FontAwesomeIcon icon={faGithub} size="2x" />
-                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            <a rel="noopener noreferrer" target="_blank" href="https://github.com/Carlosmatilla"><FontAwesomeIcon icon={faGithub} size="2x" /></a>
+            <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/carlos-matilla-fullstack/"> <FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+            
+                
+               
             </div>
 
         </nav>

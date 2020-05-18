@@ -1,5 +1,4 @@
 import React from 'react'
-// import './Image.sass'
 import Typical from 'react-typical'
 
 

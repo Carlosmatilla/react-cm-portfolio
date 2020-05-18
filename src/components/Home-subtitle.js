@@ -2,7 +2,6 @@ import React from 'react'
 import { useHistory } from "react-router-dom"
 import { Icon } from '@iconify/react';
 import chevronCompactDown from '@iconify/icons-bi/chevron-compact-down';
-// import './Image.sass'
 
 
 const HomeSubtitle = () => {

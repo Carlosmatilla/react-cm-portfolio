@@ -1,9 +1,9 @@
 import React from "react"
-import { AnimatedSection, ProjectsCounter, ProjectsNav, Stack } from '../components/index'
+import { AnimatedSection, ProjectsCounter, ProjectsNav, Stack, ProjectDescription } from '../components/index'
 import { left, right, tweenTransition } from '../animations'
 import { projects } from '../projects-db'
 import { useParams, useHistory } from "react-router-dom"
-import { motion } from 'framer-motion'
+
 
 
 const Projects = () => {
@@ -32,24 +32,8 @@ const Projects = () => {
 
 
     <AnimatedSection variants={left} transition={tweenTransition} width={100} height={50}>
-      <motion.div className="description"
-      initial={{y: `20vh`, opacity: 0}} animate={{y: 0, opacity: 1}} 
-      transition={{delay: 0.9, type: `tween`, duration: 0.6}}>
-        <div className="description__title">
-          <h1>Features</h1>
-        </div>
-        <span className="verti"></span>
 
-        <div className="description__text">
-          <p>
-           {project.features}
-			    </p>
-        </div>
-
-        <div className="description__btn">
-          REPOSITORY +
-            </div>
-      </motion.div>
+      <ProjectDescription project={project} />
 
       <span className='separator'></span>
 

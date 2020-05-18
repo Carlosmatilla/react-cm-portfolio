@@ -9,6 +9,7 @@ import ProjectsCounter from './Projects-counter'
 import ProjectsNav from './Projects-nav'
 import HomeTitle from './Home-title'
 import HomeSubtitle from './Home-subtitle'
+import ProjectDescription from './Project-description'
 
 export {
     Navbar,
@@ -21,5 +22,6 @@ export {
     ProjectsCounter,
     ProjectsNav,
     HomeTitle,
-    HomeSubtitle
+    HomeSubtitle, 
+    ProjectDescription
 }
