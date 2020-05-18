@@ -41,7 +41,7 @@ export const projects = [
     },
     {
       img: project02,
-      name: 'Brincadeira WEB',
+      name: 'Brincadeira',
       id: 2,
       technologies:[
         reactIcon, 
@@ -53,7 +53,7 @@ export const projects = [
     },
     {
       img: project03,
-      name: 'Drone-Object-Detection',
+      name: 'Object-Detection',
       id: 3,
       technologies:[
         reactIcon, 
