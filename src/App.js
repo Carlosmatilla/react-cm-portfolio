@@ -17,14 +17,14 @@ function App() {
     { path: "/about", name: "About", Page: About },
     { path: "/contact", name: "Contact", Page: Contact }
   ]
-
+let height = window.innerHeight
 
   return (
-    <div className="app">
+    <div className="app" style={{height: `${height}px`}}>
 
       <Navbar />
 
-      <div className="container">
+      <div className="container" >
         <AnimatePresence exitBeforeEnter>
           <Switch location={location} key={location.pathname}>
             {routes.map(({ path, Page }) => (

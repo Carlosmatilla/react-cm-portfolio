@@ -8,14 +8,14 @@ const Home = () => {
 
   return <>
 
-    <AnimatedSection variants={down} transition={tweenTransition} width={50} height={100}>
+    <AnimatedSection className={"home__titles"} variants={down} transition={tweenTransition} width={50} height={100}>
 
       <HomeTitle />
       <HomeSubtitle />
 
     </AnimatedSection>
 
-    <AnimatedSection variants={up} transition={tweenTransition} align={'flex-end'} width={50} height={100}>
+    <AnimatedSection className={"home__images"} variants={up} transition={tweenTransition} align={'flex-end'} width={50} height={100}>
 
       <Image source={profile} />
 

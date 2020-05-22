@@ -2,12 +2,12 @@ import React from 'react'
 import { motion } from "framer-motion"
 
 
-const AnimatedSection = ({ children, variants, transition, width, height, align }) => {
+const AnimatedSection = ({ children, className, variants, transition, width, height, align }) => {
 
     return <>
 
         <motion.section
-            className="section"
+            className={`section ${className}`}
             style={{ width: `${width}%`, height: `${height}%`, justifyContent: align }}
             initial="initial"
             animate="in"

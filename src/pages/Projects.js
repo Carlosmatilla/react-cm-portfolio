@@ -26,12 +26,12 @@ const Projects = () => {
 
   return <>
 
-    <AnimatedSection variants={right} transition={tweenTransition} width={100} height={50}>
+    <AnimatedSection className="project__section" variants={right} transition={tweenTransition} width={100} height={50}>
       <img src={project.img} alt="" className="project__img" />
     </AnimatedSection>
 
 
-    <AnimatedSection variants={left} transition={tweenTransition} width={100} height={50}>
+    <AnimatedSection className="project__section" variants={left} transition={tweenTransition} width={100} height={50}>
 
       <ProjectDescription project={project} />
 
