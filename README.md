@@ -1,4 +1,4 @@
 
 ## Portfolio
 
-This page is in construction but you can check the progress [here](www.carlosmatilla.es).
+This page is in construction but you can check the progress in www.carlosmatilla.es
